@@ -1,2 +1,2 @@
 Built using JavaScript, React and Firebase.
-[brandonkenter.com]: https://brandonkenter.com/
+[brandonkenter.com]:(https://brandonkenter.com/)
