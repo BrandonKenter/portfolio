@@ -1,3 +1,3 @@
-Built using JavaScript, React and Firebase
+Built using JavaScript, React and Firebase.
 
 [brandonkenter.com]: https://brandonkenter.com/
