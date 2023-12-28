@@ -1,8 +1,8 @@
-# My Portfolio
+# Brandon Kenter Dev Portfolio
 
 ## Description
 
-My 2023 developer portfolio. Built using JavaScript, React and Firebase.
+My 2024 developer portfolio. Built using JavaScript, React and Firebase.
 
 ## Preview
 
