@@ -8,23 +8,19 @@ const Projects = ({ maxHeight }) => {
   const [allocatorScope] = useAnimate();
   const [inventoryScope] = useAnimate();
   const [flipperScope] = useAnimate();
-
   const [bluThumbInView, setBluThumbInView] = useState(false);
   const [propertleInView, setPropertleInView] = useState(false);
   const [allocatorInView, setAllocatorInView] = useState(false);
   const [inventoryInView, setInventoryInView] = useState(false);
   const [flipperInView, setFlipperInView] = useState(false);
 
-  // Function to handle intersection changes
   const handleBluThumbIntersection = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // The div is in view
         setBluThumbInView(true);
       } else {
         const yPosition =
           bluThumbScope.current.getBoundingClientRect().top + window.scrollY;
-        // The div is out of view
         if (yPosition > window.scrollY) {
           setBluThumbInView(false);
         }
@@ -32,16 +28,13 @@ const Projects = ({ maxHeight }) => {
     });
   };
 
-  // Function to handle intersection changes
   const handlePropertleIntersection = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // The div is in view
         setPropertleInView(true);
       } else {
         const yPosition =
           propertleScope.current.getBoundingClientRect().top + window.scrollY;
-        // The div is out of view
         if (yPosition > window.scrollY) {
           setPropertleInView(false);
         }
@@ -49,16 +42,13 @@ const Projects = ({ maxHeight }) => {
     });
   };
 
-  // Function to handle intersection changes
   const handleAllocatorIntersection = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // The div is in view
         setAllocatorInView(true);
       } else {
         const yPosition =
           allocatorScope.current.getBoundingClientRect().top + window.scrollY;
-        // The div is out of view
         if (yPosition > window.scrollY) {
           setAllocatorInView(false);
         }
@@ -66,16 +56,13 @@ const Projects = ({ maxHeight }) => {
     });
   };
 
-  // Function to handle intersection changes
   const handleInventoryIntersection = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // The div is in view
         setInventoryInView(true);
       } else {
         const yPosition =
           inventoryScope.current.getBoundingClientRect().top + window.scrollY;
-        // The div is out of view
         if (yPosition > window.scrollY) {
           setInventoryInView(false);
         }
@@ -83,16 +70,13 @@ const Projects = ({ maxHeight }) => {
     });
   };
 
-  // Function to handle intersection changes
   const handleFlipperIntersection = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        // The div is in view
         setFlipperInView(true);
       } else {
         const yPosition =
           flipperScope.current.getBoundingClientRect().top + window.scrollY;
-        // The div is out of view
         if (yPosition > window.scrollY) {
           setFlipperInView(false);
         }
@@ -174,7 +158,6 @@ const Projects = ({ maxHeight }) => {
           github={null}
         />
       </motion.div>
-
       {/* propertle.com */}
       <motion.div
         animate={
@@ -201,7 +184,6 @@ const Projects = ({ maxHeight }) => {
           github={null}
         />
       </motion.div>
-
       {/* heap allocator */}
       <motion.div
         animate={
@@ -228,7 +210,6 @@ const Projects = ({ maxHeight }) => {
           github={"https://github.com/BrandonKenter/Heap-Allocator"}
         />
       </motion.div>
-
       {/* paint inventory */}
       <motion.div
         animate={
@@ -255,7 +236,6 @@ const Projects = ({ maxHeight }) => {
           github={"https://github.com/BrandonKenter/Paint-Inventory"}
         />
       </motion.div>
-
       {/* house flipper */}
       <motion.div
         animate={

@@ -1,11 +1,10 @@
-import { useAnimate, motion } from "framer-motion";
+import { motion, useAnimate } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const Header = ({ headerText }) => {
   const [scope, animate] = useAnimate();
   const [inView, setInView] = useState(false);
 
-  // Function to handle intersection changes
   const handleIntersection = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -24,7 +23,7 @@ const Header = ({ headerText }) => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Trigger when 50% of the element is in view
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver(handleIntersection, options);

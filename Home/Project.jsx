@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLink,
-  faArrowUpRightFromSquare,
-} from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faArrowUpRightFromSquare,
+  faLink,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 
 const Project = ({
   projectTitle,
@@ -20,7 +20,7 @@ const Project = ({
         <div>
           {/* header */}
           <div className="flex items-center">
-            <div className="mr-3 text-emerald-500 text-lg sm:text-2xl font-extrabold">
+            <div className="mr-3 text-emerald-500 text-xl sm:text-2xl font-extrabold">
               {projectTitle}
             </div>
             {github ? (
@@ -28,9 +28,9 @@ const Project = ({
                 whileHover={{ scale: 1.2 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                <a href={github} target="_blank">
+                <a href={github} target="_blank" rel="noreferrer">
                   <FontAwesomeIcon
-                    className="cursor-pointer mr-2 hover:text-emerald-200 text-emerald-300 text-sm sm:text-lg"
+                    className="cursor-pointer mr-2 hover:text-emerald-200 text-emerald-300 text-lg"
                     icon={faGithub}
                   />
                 </a>
@@ -41,9 +41,9 @@ const Project = ({
                 whileHover={{ scale: 1.2 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                <a href={website} target="_blank">
+                <a href={website} target="_blank" rel="noreferrer">
                   <FontAwesomeIcon
-                    className="cursor-pointer hover:text-emerald-200 text-emerald-300 text-sm sm:text-lg"
+                    className="cursor-pointer hover:text-emerald-200 text-emerald-300 text-lg"
                     icon={faLink}
                   />
                 </a>
@@ -69,6 +69,7 @@ const Project = ({
           href={website ? website : github}
           target="_blank"
           className="border-2 rounded-xl border-emerald-300 border-opacity-30 hover:border-opacity-100 hover:border-emerald-500 transition duration-200 relative h-28 w-44 min-w-[176px] mt-2 sm:mt-0 sm:ml-10 group cursor-pointer overflow-hidden shadow-black shadow-xl"
+          rel="noreferrer"
         >
           <div className="w-full h-full min-w-[176px] absolute z-50 opacity-10 bg-emerald-500 rounded-lg"></div>
           <img

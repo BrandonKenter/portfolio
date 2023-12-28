@@ -1,4 +1,4 @@
-import { useAnimate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const Line = ({ currentScope, nextScope }) => {
@@ -34,7 +34,6 @@ const Line = ({ currentScope, nextScope }) => {
     },
   };
 
-  // Function to handle intersection changes
   const handleIntersection = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {

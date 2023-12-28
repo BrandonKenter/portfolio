@@ -1,11 +1,10 @@
-import { useAnimate, motion } from "framer-motion";
+import { motion, useAnimate } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const AboutText = () => {
   const [scope, animate] = useAnimate();
   const [inView, setInView] = useState(false);
 
-  // Function to handle intersection changes
   const handleIntersection = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -23,8 +22,8 @@ const AboutText = () => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: "0px",
-      threshold: 0, // Trigger when 50% of the element is in view
+      rootMargin: "300px",
+      threshold: 0,
     };
 
     const observer = new IntersectionObserver(handleIntersection, options);
@@ -130,15 +129,6 @@ const AboutText = () => {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          <div className="flex flex-col">
-            <span className="text-slate-400 mt-2">
-              Outside of software developement, my favorite thing to do is
-              jogging. There's nothing quite like the serenity of a golden hour
-              jog along the Lakeshore Path in the summer! Yet, in my many years
-              of jogging recreationally, I've never done a marathon before. So,
-              one of my main goals is to do one before the end of 2024!
-            </span>
-          </div>
         </motion.div>
       </div>
     </div>

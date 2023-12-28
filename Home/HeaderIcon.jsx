@@ -1,12 +1,11 @@
-import { useAnimate, motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion, useAnimate } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const HeaderIcon = ({ icon }) => {
   const [scope, animate] = useAnimate();
   const [inView, setInView] = useState(false);
 
-  // Function to handle intersection changes
   const handleIntersection = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {

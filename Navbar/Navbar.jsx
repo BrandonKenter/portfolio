@@ -12,7 +12,7 @@ const Navbar = ({ aboutRef, projectsRef, contactRef, resumeRef }) => {
           duration: 0.6,
         }}
         initial={{ opacity: 0, scale: 0.2 }}
-        animate={{ opacity: 1, scale: 1}}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{
           duration: 0.3,
           ease: [0, 0.71, 0.2, 1.01],
@@ -33,7 +33,6 @@ const Navbar = ({ aboutRef, projectsRef, contactRef, resumeRef }) => {
           </div>
         </a>
       </motion.div>
-
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -59,7 +58,6 @@ const Navbar = ({ aboutRef, projectsRef, contactRef, resumeRef }) => {
           </span>
         </a>
       </motion.div>
-
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -85,7 +83,6 @@ const Navbar = ({ aboutRef, projectsRef, contactRef, resumeRef }) => {
           </span>
         </a>
       </motion.div>
-
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -111,7 +108,6 @@ const Navbar = ({ aboutRef, projectsRef, contactRef, resumeRef }) => {
           </span>
         </a>
       </motion.div>
-
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
