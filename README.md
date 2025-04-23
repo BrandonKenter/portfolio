@@ -2,11 +2,7 @@
 
 ## Description
 
-My 2024 developer portfolio. Built using JavaScript, React and Firebase.
-
-## Preview
-
-![portfolio-preview](https://github.com/BrandonKenter/Portfolio/blob/main/portfolio-preview?raw=true)
+My 2025 developer portfolio. Built using JavaScript, React and Firebase.
 
 ## Live Site
 
